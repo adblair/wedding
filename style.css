@@ -1,1 +1,49 @@
-@import 'normalize.css'
+@import 'normalize.css';
+
+body {
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+
+header, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+
+@media (width >= 576px) {
+  article {
+    margin: 0 auto;
+    width: 540px;
+  }
+}
+
+@media (width >= 768px) {
+  article {
+    width: 720px;
+  }
+}
+
+@media (width >= 992px) {
+  article {
+    width: 960px;
+  }
+}
+
+@media (width >= 1200px) {
+  article {
+    width: 1140px;
+  }
+}
+
+
+.page-header {
+  text-align: center;
+}
+
+.page-header__title {
+    font-size: 5rem;
+}
+
+.page-header__subtitle {
+    font-size: 2rem;
+}

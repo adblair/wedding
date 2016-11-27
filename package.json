@@ -7,7 +7,8 @@
     "postcss-import": "^8.2.0"
   },
   "scripts": {
-    "build": "postcss -c postcss.config.json"
+    "build": "postcss -c postcss.config.json",
+    "watch": "postcss -c postcss.config.json --watch"
   },
   "dependencies": {
     "normalize.css": "^5.0.0"
