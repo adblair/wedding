@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "cssnano": "^3.8.1",
+    "postcss": "^5.2.6",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.2.0"
+  },
+  "scripts": {
+    "build": "postcss -c postcss.config.json"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
+}
