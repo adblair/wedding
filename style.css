@@ -5,10 +5,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Averia Serif Libre', cursive;
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    'Averia Serif Libre',
+    cursive;
 }
-
 
 @media (width >= 576px) {
   article {
@@ -35,15 +42,14 @@ header, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
 .page-header {
   text-align: center;
 }
 
 .page-header__title {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .page-header__subtitle {
-    font-size: 2rem;
+  font-size: 2rem;
 }
