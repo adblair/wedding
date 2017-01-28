@@ -1,8 +1,14 @@
 @import 'normalize.css';
 
 body {
-  color: #666;
+  color: #eee;
   font-family: 'Roboto', sans-serif;
+  height: 150vh;
+  background-image: url(DSC01442.resized.phased.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #3a64a5;
 }
 
 header,
@@ -13,43 +19,36 @@ h4,
 h5,
 h6 {
   font-family:
-    'Averia Serif Libre',
+    'Alice',
     cursive;
+  font-weight: normal;
 }
 
-@media (width >= 576px) {
-  article {
+article {
+  height: 100%;
+
+  @media (width >= 768px) {
     margin: 0 auto;
-    width: 540px;
-  }
-}
-
-@media (width >= 768px) {
-  article {
     width: 720px;
   }
-}
 
-@media (width >= 992px) {
-  article {
+  @media (width >= 992px) {
     width: 960px;
   }
-}
 
-@media (width >= 1200px) {
-  article {
+  @media (width >= 1200px) {
     width: 1140px;
   }
-}
 
-.page-header {
-  text-align: center;
-}
+  & header {
+    text-align: center;
 
-.page-header__title {
-  font-size: 5rem;
-}
+    & h1 {
+      font-size: 5rem;
+    }
 
-.page-header__subtitle {
-  font-size: 2rem;
+    & p {
+      font-size: 2rem;
+    }
+  }
 }
