@@ -1,5 +1,10 @@
 @import 'normalize.css';
 
+:root {
+  --primary: #0097a7;
+  --accent: #f57c00;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -27,7 +32,7 @@ h4,
 h5,
 h6,
 nav {
-  color: #0097a7;
+  color: var(--primary);
   font-family:
     'Alice',
     cursive;
@@ -72,12 +77,12 @@ nav {
 
   & a,
   & a:visited {
-    color: #0097a7;
+    color: var(--primary);
     text-decoration: none;
   }
 
   & a:hover {
-    color: #f57c00;
+    color: var(--accent);
   }
 
   & ul {
