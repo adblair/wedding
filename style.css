@@ -22,6 +22,7 @@ body {
   color: #555;
   line-height: 1.5;
   font-family: Roboto, sans-serif;
+  font-weight: 400;
   padding: 0;
 }
 
@@ -34,6 +35,11 @@ a {
   &:hover {
     color: var(--accent);
   }
+}
+
+strong,
+time {
+  font-weight: 600;
 }
 
 li {
@@ -83,7 +89,7 @@ header {
 
   & h1 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
 
     @media (width >= 768px) {
@@ -97,7 +103,7 @@ header {
     font-size: 1.5rem;
 
     @media (width >= 768px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 }
@@ -163,6 +169,7 @@ h2 {
 }
 
 h3 {
+  font-size: 1.25rem;
   margin: 1rem 0 0.5rem;
 }
 
