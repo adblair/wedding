@@ -97,7 +97,7 @@ header {
   }
 
   @media (--viewport-size-extra-large) {
-    background-image: url('images/header.1200.jpg');
+    background-image: url('https://www.dropbox.com/s/50opxaa8a5v1j30/header.1200.jpg?dl=0');
     height: 732px;
     width: var(--page-width-extra-large);
   }

@@ -1,9 +1,13 @@
 {
   "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "jquery": "^3.2.1",
     "normalize.css": "^5.0.0"
   },
   "devDependencies": {
     "cssnano": "^3.8.1",
+    "grunt-cli": "^1.2.0",
+    "node-sass": "^4.5.3",
     "postcss": "^5.2.6",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.8.0",
@@ -12,9 +16,9 @@
     "stylelint-config-standard": "^15.0.0"
   },
   "scripts": {
-    "build": "postcss -c postcss.config.json",
-    "lint": "stylelint style.css",
-    "watch": "postcss -c postcss.config.json --watch"
+    "build:css": "node-sass --output public --output-style compressed src/style.scss",
+    "watch:css": "node-sass --watch --output public --source-map true src/style.scss",
+    "lint": "stylelint style.css"
   },
   "stylelint": {
     "extends": "stylelint-config-standard"
