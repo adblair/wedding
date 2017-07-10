@@ -48,9 +48,18 @@
 // Utility classes
 @import "../node_modules/bootstrap/scss/utilities";
 
+$container-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+
+html {
+  font-size: 125%;
+}
+
 body {
+  background-color: #fff;
+  color: #555;
   position: relative;
-  background-color: rgba($brand-primary, 0.1);
+  line-height: 1.5;
+  padding: 0;
 }
 
 .navbar {
@@ -58,11 +67,20 @@ body {
 }
 
 h2 {
-  padding-top: $spacer-y;
+  text-align: center;
+  font-size: 3rem;
+}
+
+time {
+  font-weight: bold;
+}
+
+.header-container {
+  // background-color: #e0f7fa;
 }
 
 header {
-  box-shadow: var(--container-shadow);
+  // box-shadow: $container-shadow;
   margin: 0 auto;
   padding: 2rem 0 1rem;
   text-align: center;
@@ -85,41 +103,95 @@ header {
   //   width: var(--page-width-large);
   // }
 
-  @include media-breakpoint-up(xl) {
-    background-image: url('https://www.dropbox.com/s/50opxaa8a5v1j30/header.1200.jpg?dl=0&raw=1');
-    height: 488px;
+  // @include media-breakpoint-up(xl) {
+  //   background-image: url('https://www.dropbox.com/s/50opxaa8a5v1j30/header.1200.jpg?dl=0&raw=1');
+  //   background-position: center center;
+  //   height: 667px;
+  // }
+
+  @media (min-width: 768px) {
+    background-image: url('https://www.dropbox.com/s/fqqxhejgjkeu0r2/header.1920.jpg?dl=0&raw=1');
+    // background-repeat: no-repeat;
+    background-position: center center;
+    height: 690px;
   }
 
-  & h1 {
-    color: #fff;
-    font-size: 2rem;
+  -webkit-text-stroke: 1px rgba($black, 0.2);
+
+  h1 {
+    color: rgba($white, 0.9);
+    font-size: 4rem;
     margin: 0;
 
-    @media (--viewport-size-medium) {
-      font-size: 4rem;
+    // @include media-breakpoint-up(sm) {
+    //   font-size: 6rem;
+    // }
+
+    @include media-breakpoint-up(sm) {
+      font-size: 8rem;
     }
   }
 
-  & p {
-    color: #fff;
-    margin-top: 0.5em;
-    font-size: 1.5rem;
+  p {
+    color: rgba($white, 0.9);
+    font-family: $headings-font-family;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 3em;
 
-    @media (--viewport-size-medium) {
-      font-size: 2rem;
+    @include media-breakpoint-up(md) {
+      font-size: 4rem;
     }
   }
 }
 
 main {
+  // box-shadow: $container-shadow;
+}
+
+section {
   background-color: #fff;
+  margin: 4rem 0;
+  padding: 2rem;
+  box-shadow: $container-shadow;
+  border-radius: 0.5rem;
+}
+
+.venue-images {
+  flex-wrap: wrap;
+  margin: -0.5rem -0.5rem 0 0;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
+  & figure {
+    margin: 0;
+    padding: 0.5rem 0.5rem 0 0;
+  }
+
+  & img {
+    height: auto;
+    vertical-align: top;
+    width: 100%;
+  }
 }
 
 .toc {
   padding-top: $spacer-y;
+
+  .nav-link {
+    font-family: 'Sue Ellen Francisco';
+  }
 }
 
 .nav-pills .nav-item .active {
   color: $brand-primary;
   background-color: rgba($brand-primary, 0.1);
+}
+
+.map {
+  border: 0;
+  height: 20rem;
+  width: 100%;
 }
