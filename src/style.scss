@@ -131,12 +131,12 @@ header {
   //
   //
 
-  background-image: url('https://www.dropbox.com/s/cbhufq4m4v9jjdj/Hayley_Arthur_EngagmentShoot-3.667.jpg?dl=0&raw=1');
+  background-image: url('http://res.cloudinary.com/da1qvqhjg/image/upload/v1501450914/Hayley_Arthur_EngagmentShoot-3.667_sg6lmh.jpg');
   height: 300px;
   background-position: center center;
 
   @include media-breakpoint-up(md) {
-    background-image: url('https://www.dropbox.com/s/86txpymvaxjqpmp/Hayley_Arthur_EngagmentShoot-3.1920.jpg?dl=0&raw=1');
+    background-image: url('http://res.cloudinary.com/da1qvqhjg/image/upload/v1501450504/Hayley_Arthur_EngagmentShoot-3.1920_tsjfw4.jpg');
     height: 600px;
   }
 
