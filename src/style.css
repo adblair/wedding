@@ -1,25 +1,7 @@
 @import 'normalize.css';
 
-:root {
-  --primary: #006064;
-  --secondary: #bd2b5a;
-  --accent: #f4511e;
-  --nav-width: 8.5rem;
-  --page-width-small: 576px;
-  --page-width-medium: 768px;
-  --page-width-large: 992px;
-  --page-width-extra-large: 1200px;
-  --container-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
-}
-
-@custom-media --viewport-size-small (width >= 576px);
-@custom-media --viewport-size-medium (width >= 768px);
-@custom-media --viewport-size-large (width >= 992px);
-@custom-media --viewport-size-extra-large (width >= 1200px);
-
 html {
   box-sizing: border-box;
-  font-size: 125%;
 }
 
 *,
@@ -29,209 +11,23 @@ html {
 }
 
 body {
-  background-color: #ccc;
-  color: #555;
-  line-height: 1.5;
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
-a {
-  &:any-link {
-    color: var(--primary);
-  }
-
-  &:active,
-  &:hover {
-    color: var(--accent);
-  }
-}
-
-strong,
-time {
-  font-weight: 600;
-}
-
-li {
-  margin-bottom: 1rem;
-}
-
-header,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-nav {
-  color: var(--primary);
-  font-family:
-    'Architects Daughter',
-    cursive;
-  font-weight: normal;
-}
-
-header {
-  box-shadow: var(--container-shadow);
-  margin: 0 auto;
-  padding: 2rem 0 1rem;
-  text-align: center;
-
-  @media (--viewport-size-small) {
-    background-image: url('images/header.576.jpg');
-    height: 351px;
-    width: var(--page-width-small);
-  }
-
-  @media (--viewport-size-medium) {
-    background-image: url('images/header.768.jpg');
-    height: 468px;
-    width: var(--page-width-medium);
-  }
-
-  @media (--viewport-size-large) {
-    background-image: url('images/header.992.jpg');
-    height: 605px;
-    width: var(--page-width-large);
-  }
-
-  @media (--viewport-size-extra-large) {
-    background-image: url('https://www.dropbox.com/s/50opxaa8a5v1j30/header.1200.jpg?dl=0');
-    height: 732px;
-    width: var(--page-width-extra-large);
-  }
-
-  & h1 {
-    color: #fff;
-    font-size: 2rem;
-    margin: 0;
-
-    @media (--viewport-size-medium) {
-      font-size: 4rem;
-    }
-  }
-
-  & p {
-    color: #fff;
-    margin-top: 0.5em;
-    font-size: 1.5rem;
-
-    @media (--viewport-size-medium) {
-      font-size: 2rem;
-    }
-  }
-}
-
-main {
-  background-color: #fff;
-  padding: 0 2rem 2rem;
-  width: 100%;
-  box-shadow: var(--container-shadow);
-
-  @media (--viewport-size-small) {
-    margin: 0 auto;
-    width: var(--page-width-small);
-  }
-
-  @media (--viewport-size-medium) {
-    width: var(--page-width-medium);
-  }
-
-  @media (--viewport-size-large) {
-    width: var(--page-width-large);
-  }
-
-  @media (--viewport-size-extra-large) {
-    width: var(--page-width-extra-large);
-  }
-}
-
-nav {
-  padding-top: 1rem;
-  text-align: center;
-
-  & a:any-link {
-    color: var(--secondary);
-    text-decoration: none;
-  }
-
-  & a:active,
-  & a:hover {
-    color: var(--accent);
-  }
-
-  & ul {
-    margin: 0;
-    list-style: none;
-    padding-left: 0;
-  }
-
-  & li {
-    margin-bottom: 1rem;
-  }
-
-  @media (--viewport-size-medium) {
-    border-right: solid 0.05rem color(var(--secondary) alpha(- 50%));
-    float: left;
-    margin-top: 2rem;
-    text-align: left;
-    width: var(--nav-width);
-  }
-}
-
-.content {
-  @media (--viewport-size-medium) {
-    padding-left: calc(var(--nav-width) + 2rem);
-  }
-}
-
-section {
-  padding-top: 2rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-  margin: 1rem 0 0.5rem;
-}
-
-.map {
-  border: 0;
-  height: 20rem;
-  width: 100%;
-}
-
-time {
-  font-weight: bold;
-}
-
-.venue-images {
-  flex-wrap: wrap;
-  margin: -0.5rem -0.5rem 0 0;
-
-  @media (--viewport-size-medium) {
-    display: flex;
-  }
-
-  & figure {
-    margin: 0;
-    padding: 0.5rem 0.5rem 0 0;
-  }
-
-  & img {
-    height: auto;
-    vertical-align: top;
-    width: 100%;
-  }
-}
-
-.interlude-image {
+img {
   display: block;
-  margin: 2rem auto 0;
+  height: 100vh;
+  object-fit: cover;
+  width: 100vw;
+}
+
+footer {
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 0.2em;
+  position: absolute;
+  right: 0;
 }

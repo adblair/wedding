@@ -1,5 +1,5 @@
 {
-  "input": "style.css",
+  "input": "src/style.css",
   "output": "public/style.css",
   "use": [
     "postcss-import",

@@ -1,23 +1,23 @@
 {
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
-    "jquery": "^3.2.1",
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^5.0.0",
+    "object-fit-polyfill": "^0.1.0",
+    "picturefill": "^3.0.2"
   },
   "devDependencies": {
     "cssnano": "^3.8.1",
-    "grunt-cli": "^1.2.0",
-    "node-sass": "^4.5.3",
     "postcss": "^5.2.6",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.8.0",
     "postcss-import": "^8.2.0",
     "stylelint": "^7.6.0",
-    "stylelint-config-standard": "^15.0.0"
+    "stylelint-config-standard": "^15.0.0",
+    "webpack": "^3.7.1"
   },
   "scripts": {
-    "build:css": "node-sass --output public --output-style compressed src/style.scss",
-    "watch:css": "node-sass --watch --output public --source-map true src/style.scss",
+    "build:css": "postcss -c postcss.config.json",
+    "build:js": "webpack",
+    "watch:css": "postcss -c postcss.config.json --watch",
     "lint": "stylelint style.css"
   },
   "stylelint": {
